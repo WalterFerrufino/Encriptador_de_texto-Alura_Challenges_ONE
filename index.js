@@ -4,6 +4,9 @@ var munieco = document.querySelector(".right-container");
 var result = document.querySelector(".result");
 var copy = document.querySelector(".copy");
 
+var btnCopiar = document.querySelector("#botonCopiar");
+btnCopiar.onclick = copiar;
+
 
 botonEncriptar.onclick = encriptar;
 botonDesencriptar.onclick = desencriptar;
@@ -87,4 +90,13 @@ function desencriptarTexto(mensaje) {
         }
     }
     return textoFinal;
+}
+
+
+
+
+function copiar() {
+    var contenido = document.querySelector("#textToCopy");
+    contenido.select();
+    document.execCommand("copy");
 }
