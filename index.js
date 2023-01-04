@@ -15,11 +15,18 @@ function encriptar() {
     ocultarAdelante();
     result.textContent = encriptarTexto(recuperarTexto());
     aparecerAdelante();
+    document.getElementById("right-container-2").style.display = "table";
+    document.getElementById("botonCopiar").style.display = "block";
+
+
 }
 
 function desencriptar(){
     ocultarAdelante();
     result.textContent = desencriptarTexto(recuperarTexto());
+    document.getElementById("right-container-2").style.display = "table";
+    document.getElementById("botonCopiar").style.display = "block";
+
 }
 
 function recuperarTexto() {
@@ -100,3 +107,10 @@ function copiar() {
     contenido.select();
     document.execCommand("copy");
 }
+
+
+
+document.getElementById("right-container-2").style.display = "none";
+document.getElementById("botonCopiar").style.display = "none";
+
+
