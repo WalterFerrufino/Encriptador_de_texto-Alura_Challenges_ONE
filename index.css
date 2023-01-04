@@ -204,7 +204,7 @@ main {
     outline: none;
 }
 textarea::-webkit-scrollbar {
-    border: 0;
+    width: 0;
 }
 
 @media screen and (max-width: 768px) {
