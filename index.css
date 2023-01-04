@@ -63,6 +63,7 @@ main {
     font-size: 3.2rem;
     line-height: 4.8rem;
     color: var(--dark-blue-300);
+    outline: none;
     border: none;
 }
 
@@ -72,6 +73,7 @@ main {
     padding: 3.2rem;
     background-color: #FFFFFF;
     width: 40rem;
+    height: calc(100vh - 18rem);
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
 }
@@ -192,13 +194,14 @@ main {
 }
 #textToCopy {
     width: 100%;
-    height: auto;
+    height: 100%;
     border-style: none;
     font-family: 'Inter';
     font-weight: 400;
     font-size: 2.4rem;
     line-height: 3.6rem;
     color: var(--gray-400);
+    outline: none;
 }
 @media screen and (max-width: 768px) {
     .logo {
