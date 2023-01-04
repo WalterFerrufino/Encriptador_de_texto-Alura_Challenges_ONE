@@ -203,6 +203,10 @@ main {
     color: var(--gray-400);
     outline: none;
 }
+textarea::-webkit-scrollbar {
+    border: 0;
+}
+
 @media screen and (max-width: 768px) {
     .logo {
         margin-top: 7.3rem;
@@ -251,14 +255,10 @@ main {
     }
     .textarea {
         margin: 0 0 2rem 0;
-        height: auto;
     }
     .right {
         height: auto;
         margin-bottom: 2.4rem;
-    }
-    .right-container {
-        margin-top: -32px;
     }
     .upper-buttons-container {
         margin-left: 1.6rem;
