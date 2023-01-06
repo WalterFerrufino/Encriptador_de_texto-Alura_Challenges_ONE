@@ -3,13 +3,14 @@ var botonDesencriptar = document.querySelector(".btn-desencriptar");
 var munieco = document.querySelector(".right-container");
 var result = document.querySelector(".result");
 var copy = document.querySelector(".copy");
-
 var btnCopiar = document.querySelector("#botonCopiar");
-btnCopiar.onclick = copiar;
 
+document.getElementById("right-container-2").style.display = "none";
+document.getElementById("botonCopiar").style.display = "none";
 
 botonEncriptar.onclick = encriptar;
 botonDesencriptar.onclick = desencriptar;
+btnCopiar.onclick = copiar;
 
 function encriptar() {
     ocultarAdelante();
@@ -17,8 +18,6 @@ function encriptar() {
     aparecerAdelante();
     document.getElementById("right-container-2").style.display = "table";
     document.getElementById("botonCopiar").style.display = "block";
-
-
 }
 
 function desencriptar(){
@@ -26,7 +25,6 @@ function desencriptar(){
     result.textContent = desencriptarTexto(recuperarTexto());
     document.getElementById("right-container-2").style.display = "table";
     document.getElementById("botonCopiar").style.display = "block";
-
 }
 
 function recuperarTexto() {
@@ -99,18 +97,8 @@ function desencriptarTexto(mensaje) {
     return textoFinal;
 }
 
-
-
-
 function copiar() {
     var contenido = document.querySelector("#textToCopy");
     contenido.select();
     document.execCommand("copy");
 }
-
-
-
-document.getElementById("right-container-2").style.display = "none";
-document.getElementById("botonCopiar").style.display = "none";
-
-

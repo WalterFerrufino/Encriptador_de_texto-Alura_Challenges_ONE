@@ -4,35 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Encriptador de texto</title>
     <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
     <main>
         <img class="logo" src="./assets/Logo.svg" alt="">    
-        <div class="section-container">
+        <div class="sections-container">
+
+<!-- Section left -->
             <section class="left">
                 <textarea class="textarea" autofocus placeholder="Ingrese el texto aquí."></textarea>
+
                 <div class="bottom-textarea-container">
+
                     <div class="upper-buttons-container">
                         <img class=".upper-buttons-p-exclamation" src="./assets/Vector.svg" alt="">
                         <p class="upper-buttons-p">
                             Sólo letras minúsculas y sin tildes.
                         </p>
                     </div>
+
                     <div class="buttons">
                         <input type="button" class="btn-blue btn-encriptar" value="Encriptar">
                         <input type="button" class="btn-bordered btn-desencriptar" value="Desencriptar">
                     </div>
+
                 </div>
+
             </section>
+<!-- /Section left -->
+
+<!-- Section right -->
             <section class="right">
+
                 <div class="rigth-container-2" id="right-container-2">
                     <div class="textarea-right">
                         <textarea class="result" id="textToCopy"></textarea>
                     </div>
                     <button onclick="copyToClipBoard();" type="button" class="btn-bordered copy" id="botonCopiar">Copiar</button>
                 </div>
+
                 <div class="right-container">
                     <div class="rigth-cell">
                         <img class="munieco" src="./assets/Muñeco.svg" alt="">
@@ -40,11 +53,12 @@
                         <p class="p-right">Ingresa el texto que desees encriptar o desencriptar.</p>            
                     </div>
                 </div>
-            </section>    
+
+            </section>   
+<!-- /Section right -->
+
         </div>
     </main>
     <script src="./index.js"></script>
 </body>
 </html>
-
-<!-- display 1 y 2 -->.

@@ -38,19 +38,22 @@ main {
 }
 
 .logo {
-    display: block;
+    position: absolute;
     height: 4.8rem;
     margin-left: 3.95rem;
     margin-top: 4rem;
 }
-
+.sections-container {
+    padding-top: 4.8rem;
+    margin: 0 1rem;
+}
 .left {
     display: inline-block;
     background-color: var(--light-blue-100);
     border: none;
     margin-top: 8rem;
-    margin-left: 24rem;
-    width: 68rem;
+    margin-left: 16.67%;
+    width: 47.22%;
     height: calc(100vh - 18.0rem);
 }
 
@@ -69,10 +72,10 @@ main {
 
 .right {
     display: inline-block;
-    margin: -2.4rem 0 -4.8rem 8rem;
+    margin: 0 0 -4.8rem 8rem;
     padding: 3.2rem;
     background-color: #FFFFFF;
-    width: 40rem;
+    width: 27.77%;
     height: calc(100vh - 18rem);
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
@@ -111,6 +114,10 @@ main {
     vertical-align: middle;
 }
 
+.buttons{
+    margin: 0;
+}
+
 .upper-buttons-p {
     display: table-cell;
     vertical-align: middle;
@@ -125,7 +132,7 @@ main {
 }
 
 .btn-blue {
-    width: 49%;
+    width: calc(50% - 5.5px);
     height: 6.7rem;
     border-radius: 24px;
     padding: 2.4rem;
@@ -139,7 +146,7 @@ main {
 }
 
 .btn-bordered {
-    width: 49%;
+    width: calc(50% - 5.5px);
     height: 6.7rem;
     border-radius: 24px;
     padding: 2.4rem;
@@ -206,7 +213,47 @@ main {
 textarea::-webkit-scrollbar {
     width: 0;
 }
-
+@media screen and (max-width: 1040px) {
+    .logo {
+        margin-top: 7.3rem;
+    }
+    .left, .right {
+        display: block;
+        margin: auto;
+    }
+    .left {
+        padding: 0 0 4rem 0;
+        height: auto;
+        width: 100%;
+    }
+    .textarea {
+        margin-top: 12rem;
+        height: calc(100vh - 538px);
+    }
+    .textarea-right {
+        height: auto;
+    }
+    .right {
+        margin: auto;
+        margin-bottom: 4rem;
+        width: 50%;
+        height: auto;
+    }
+    .rigth-cell {
+        width: 50%;
+        padding: 3.2rem;
+    }
+    .munieco {
+        width: 100%;
+        margin: auto;
+        align-self: center;
+    }
+    .copy {
+        width: 100%;
+        margin: auto;
+        margin-top: 3.2rem;
+    }
+}
 @media screen and (max-width: 768px) {
     .logo {
         margin-top: 7.3rem;
@@ -218,6 +265,7 @@ textarea::-webkit-scrollbar {
     .left {
         padding: 0 0 4rem 0;
         height: auto;
+        width: 100%;
     }
     .textarea {
         margin-top: 12rem;
@@ -233,7 +281,6 @@ textarea::-webkit-scrollbar {
     }
     .right-container {
         margin: auto;
-        /* margin-top: -32px; */
     }
     .munieco {
         display: none;
@@ -244,9 +291,10 @@ textarea::-webkit-scrollbar {
         margin-top: 3.2rem;
     }
 }
-
 @media screen and (max-width: 375px) {
     .logo {
+        display: block;
+        position: relative;
         margin: 2.4rem 0 4rem -2.8rem;
     }
     .left, .right {
