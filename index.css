@@ -60,6 +60,7 @@ main {
 .textarea {
     width: 100%;
     height: calc(100% - 181.77px);
+    min-height: 10rem;
     background-color: var(--light-blue-100);
     font-family: 'Inter';
     font-weight: 400;
