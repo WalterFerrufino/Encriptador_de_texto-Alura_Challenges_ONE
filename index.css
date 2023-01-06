@@ -35,6 +35,8 @@ body {
 main {
     max-width: 1440px;
     margin: auto;
+    position: relative;
+    z-index: -1;
 }
 
 .logo {
@@ -193,6 +195,42 @@ main {
     padding: 0 1.6rem;
 }
 
+footer {
+    display: table;
+    background-color: var(--dark-blue-400);
+    min-height: 12rem;
+    width: 100%;
+    box-shadow: 0px 10px 40px 20px var(--light-blue-400);
+}
+
+.footer-cell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+
+footer p {
+    min-width: 8rem;
+    color: var(--light-blue-100);
+    font-size: 2.4rem;
+    font-family: 'Inter';
+    text-align: center;
+    line-height: 4rem;
+    margin: 2.4rem 0 2.4rem 0;
+}
+
+.footer-a-container, footer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    margin: 0 10vw;
+    height: 4.8rem;
+}
+
 .hide {
     display: none;
 }
@@ -214,6 +252,7 @@ main {
 textarea::-webkit-scrollbar {
     width: 0;
 }
+
 @media screen and (max-width: 1040px) {
     .logo {
         margin-top: 7.3rem;
@@ -290,6 +329,9 @@ textarea::-webkit-scrollbar {
         width: 100%;
         margin: auto;
         margin-top: 3.2rem;
+    }
+    footer p {
+        font-size: 1.6rem;
     }
 }
 @media screen and (max-width: 375px) {
