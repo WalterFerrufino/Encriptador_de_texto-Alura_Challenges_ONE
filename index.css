@@ -35,8 +35,6 @@ body {
 main {
     max-width: 1440px;
     margin: auto;
-    position: relative;
-    z-index: -1;
 }
 
 .logo {
@@ -196,6 +194,7 @@ main {
 }
 
 footer {
+    position: relative;
     display: table;
     background-color: var(--dark-blue-400);
     min-height: 12rem;
