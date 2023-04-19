@@ -102,3 +102,11 @@ function copiar() {
     contenido.select();
     document.execCommand("copy");
 }
+
+const copyBtn = document.querySelector('.copy');
+const resultTextarea = document.querySelector('.result');
+const textarea = document.querySelector('.textarea');
+
+copyBtn.addEventListener('click', () => {
+  textarea.value = resultTextarea.value;
+});
